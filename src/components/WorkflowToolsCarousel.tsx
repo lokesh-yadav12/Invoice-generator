@@ -212,7 +212,7 @@ const WorkflowToolsCarousel = () => {
                     }`}
                 >
                   {/* Icon Container */}
-                  <div className={`mb-2 ${tool.featured ? 'bg-gradient-to-br from-gray-500 to-gray-700 p-4 rounded-2xl' : ''}`}>
+                  <div className={`mb-2 ${tool.featured ? 'bg-gradient-to-br from-[#b67ed1] to-blue-700 p-4 rounded-2xl' : ''}`}>
                     {tool.icon}
                   </div>
 
