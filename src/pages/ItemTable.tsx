@@ -698,7 +698,7 @@ export default function InvoiceItemsTable() {
           <div className="grid grid-cols-2 gap-4 p-3 border-t-2 border-dashed border-gray-300 bg-gray-50">
             <button
               onClick={() => addNewItem()}
-              className="flex items-center justify-center gap-2 py-2 border-2 border-dashed border-purple-300 rounded-lg text-purple-600 hover:border-purple-500 hover:bg-purple-50 transition-all duration-200 font-medium"
+              className="flex items-center justify-center required gap-2 py-2 border-2 border-dashed border-purple-300 rounded-lg text-purple-600 hover:border-purple-500 hover:bg-purple-50 transition-all duration-200 font-medium"
             >
               <Plus size={20} />
               <span>Add New Line</span>

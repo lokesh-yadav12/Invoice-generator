@@ -147,12 +147,12 @@ a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-color);
+  background: var(--text-primary);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-light);
+  background: var(--text-primary);
 }
 
 /* Button styles */

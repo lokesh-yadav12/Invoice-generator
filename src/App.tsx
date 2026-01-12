@@ -26,6 +26,7 @@ import DeliveryChallanPreview from './pages/invoice-templates/delivery-challan/I
 
 import ProformaInvoiceForm from './pages/invoice-templates/proforma-invoice/Invoice';
 import ProformaInvoicePreview from './pages/invoice-templates/proforma-invoice/InvoicePreview';
+import WorkflowToolsCarousel from './components/WorkflowToolsCarousel';
 
 // Scroll to top component
 const ScrollToTop = () => {
@@ -177,6 +178,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="templete" element={<WorkflowToolsCarousel />} />
 
         {/* Protected Routes */}
         <Route
