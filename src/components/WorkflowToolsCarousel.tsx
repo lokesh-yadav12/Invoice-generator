@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const WorkflowToolsCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -13,20 +13,20 @@ const WorkflowToolsCarousel = () => {
       route: '/invoice/invoice-generator',
       icon: (
         <div className="w-32 h-40 mb-2 bg-white rounded-lg shadow-md p-4">
-          <div className="text-xs font-semibold text-blue-700 mb-3">Invoice</div>
+          <div className="text-xs font-semibold text-gray-700 mb-3">Invoice</div>
           <div className="space-y-2">
             <div className="flex gap-1">
               <div className="h-1.5 w-12 bg-red-500 rounded"></div>
-              <div className="h-1.5 w-6 bg-blue-400 rounded"></div>
-              <div className="h-1.5 w-6 bg-blue-400 rounded"></div>
+              <div className="h-1.5 w-6 bg-gray-400 rounded"></div>
+              <div className="h-1.5 w-6 bg-gray-400 rounded"></div>
             </div>
             <div className="h-1.5 w-16 bg-red-200 rounded"></div>
-            <div className="h-1.5 w-20 bg-blue-200 rounded"></div>
-            <div className="h-1.5 w-14 bg-blue-200 rounded"></div>
-            <div className="h-2 w-20 bg-blue-500 rounded mt-4"></div>
+            <div className="h-1.5 w-20 bg-gray-200 rounded"></div>
+            <div className="h-1.5 w-14 bg-gray-200 rounded"></div>
+            <div className="h-2 w-20 bg-gray-500 rounded mt-4"></div>
           </div>
-          <button className="mt-3 w-full bg-[#b67ed1] text-white text-[10px] py-1.5 rounded-md flex items-center justify-center gap-1">
-            <span className="text-sm">+</span> Create
+          <button className="mt-3 w-full bg-gray-600 text-white text-[10px] py-1.5 rounded-md flex items-center justify-center gap-1">
+            <span className="text-sm">+</span> Create Invoice
             <ChevronRight className="w-2 h-2" />
           </button>
         </div>
@@ -40,17 +40,17 @@ const WorkflowToolsCarousel = () => {
       featured: true,
       icon: (
         <div className="w-32 h-40 bg-white rounded-lg shadow-md p-4">
-          <div className="text-xs font-semibold text-blue-600 mb-3">Purchase Order</div>
+          <div className="text-xs font-semibold text-gray-700 mb-3">Purchase Order</div>
           <div className="space-y-2">
             <div className="flex gap-1">
               <div className="h-1.5 w-12 bg-red-400 rounded"></div>
-              <div className="h-1.5 w-6 bg-blue-200 rounded"></div>
-              <div className="h-1.5 w-6 bg-blue-200 rounded"></div>
+              <div className="h-1.5 w-6 bg-gray-200 rounded"></div>
+              <div className="h-1.5 w-6 bg-gray-200 rounded"></div>
             </div>
             <div className="h-1.5 w-14 bg-red-200 rounded"></div>
             <div className="flex gap-1">
-              <div className="h-1.5 w-3 bg-blue-500 rounded-full"></div>
-              <div className="h-1.5 w-3 bg-blue-500 rounded-full"></div>
+              <div className="h-1.5 w-3 bg-gray-500 rounded-full"></div>
+              <div className="h-1.5 w-3 bg-gray-500 rounded-full"></div>
             </div>
           </div>
           <button className="mt-6 w-full bg-white text-red-500 text-[10px] py-1.5 rounded-md border border-red-200">
@@ -66,13 +66,13 @@ const WorkflowToolsCarousel = () => {
       route: '/invoice/quotation',
       icon: (
         <div className="w-40 h-48 mb-2 bg-white rounded-xl shadow-lg p-6">
-          <div className="text-sm font-semibold text-blue-600 mb-4">Quotation</div>
+          <div className="text-sm font-semibold text-gray-700 mb-4">Quotation</div>
           <div className="space-y-3">
             <div className="flex gap-2">
-              <div className="h-2 w-24 bg-blue-200 rounded"></div>
+              <div className="h-2 w-24 bg-gray-200 rounded"></div>
               <div className="h-2 w-8 bg-blue-300 rounded"></div>
             </div>
-            <div className="h-2 w-20 bg-blue-200 rounded"></div>
+            <div className="h-2 w-20 bg-gray-200 rounded"></div>
             <div className="h-6 w-32 bg-blue-500 rounded flex items-center justify-center mt-4">
               <div className="h-3 w-20 bg-blue-400 rounded"></div>
             </div>
@@ -90,10 +90,10 @@ const WorkflowToolsCarousel = () => {
       featured: true,
       icon: (
         <div className="w-32 h-40 mb-2 bg-white rounded-lg shadow-md p-4">
-          <div className="text-xs font-semibold text-blue-700 mb-3">GST Invoice</div>
+          <div className="text-xs font-semibold text-gray-700 mb-3">GST Invoice</div>
           <div className="space-y-2">
-            <div className="flex items-center gap-1 text-[10px] text-blue-600">
-              <div className="w-2 h-2 border border-blue-600 rounded"></div>
+            <div className="flex items-center gap-1 text-[10px] text-gray-600">
+              <div className="w-2 h-2 border border-gray-600 rounded"></div>
               <span>Generate E-invoice</span>
             </div>
             <div className="flex items-center gap-1 text-[10px] text-blue-600">
@@ -112,7 +112,7 @@ const WorkflowToolsCarousel = () => {
       route: '/invoice/delivery-challan',
       icon: (
         <div className="w-32 h-40 mb-7 bg-white rounded-lg shadow-md p-4">
-          <div className="text-xs font-semibold text-blue-700 mb-3">Delivery Challan</div>
+          <div className="text-xs font-semibold text-gray-700 mb-3">Delivery Challan</div>
           <div className="space-y-2">
             <div className="flex gap-1 items-center">
               <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
@@ -131,8 +131,8 @@ const WorkflowToolsCarousel = () => {
               <div className="h-1.5 w-16 bg-green-200 rounded"></div>
             </div>
           </div>
-          <button className="mt-4 w-full bg-white text-blue-600 text-[10px] py-1.5 rounded-md border border-blue-200 flex items-center justify-center gap-1">
-            <div className="w-2 h-2 border border-blue-600 rounded"></div>
+          <button className="mt-4 w-full bg-white text-gray-600 text-[10px] py-1.5 rounded-md border border-gray-200 flex items-center justify-center gap-1">
+            <div className="w-2 h-2 border border-gray-600 rounded"></div>
             Interstate Delivery
           </button>
         </div>
@@ -145,16 +145,16 @@ const WorkflowToolsCarousel = () => {
       route: '/invoice/proforma-invoice',
       icon: (
         <div className="w-40 h-48 mb-2 bg-white rounded-xl shadow-lg p-6">
-          <div className="text-sm font-semibold text-blue-700 mb-4">Proforma Invoice</div>
+          <div className="text-sm font-semibold text-gray-700 mb-4">Proforma Invoice</div>
           <div className="space-y-3">
             <div className="flex gap-2">
-              <div className="h-2 w-20 bg-blue-500 rounded"></div>
-              <div className="h-2 w-8 bg-blue-400 rounded-full"></div>
-              <div className="h-2 w-8 bg-blue-400 rounded-full"></div>
+              <div className="h-2 w-20 bg-gray-500 rounded"></div>
+              <div className="h-2 w-8 bg-gray-400 rounded-full"></div>
+              <div className="h-2 w-8 bg-gray-400 rounded-full"></div>
             </div>
-            <div className="h-2 w-24 bg-blue-200 rounded"></div>
-            <div className="h-2 w-28 bg-blue-200 rounded"></div>
-            <div className="text-2xl font-bold text-blue-600 mt-4">$$$</div>
+            <div className="h-2 w-24 bg-gray-200 rounded"></div>
+            <div className="h-2 w-28 bg-gray-200 rounded"></div>
+            <div className="text-2xl font-bold text-gray-600 mt-4">$$$</div>
           </div>
         </div>
       )
@@ -175,7 +175,7 @@ const WorkflowToolsCarousel = () => {
 
 
   return (
-    <div className="min-h-screen  py-12">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-12">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-4">
@@ -193,10 +193,10 @@ const WorkflowToolsCarousel = () => {
           <button
             onClick={prevSlide}
             disabled={currentSlide === 0}
-            className={`absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10  rounded-full shadow-lg flex items-center justify-center transition-colors ${currentSlide === 0 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-50'
+            className={`absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center transition-colors ${currentSlide === 0 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-50'
               }`}
           >
-            <ChevronLeft className="w-5 h-5 text-blue-600" />
+            <ChevronLeft className="w-5 h-5 text-gray-600" />
           </button>
 
           {/* Cards Grid */}
@@ -208,16 +208,16 @@ const WorkflowToolsCarousel = () => {
               {tools.map((tool, index) => (
                 <div
                   key={index}
-                  className={`flex-shrink-0 w-[calc(33.333%-11px)]  rounded-xl shadow-lg px-4 py-4 flex flex-col items-center text-center transition-all hover:shadow-xl ${tool.featured ? 'ring-2 ring-blue-200' : ''
+                  className={`flex-shrink-0 w-[calc(33.333%-11px)] bg-white rounded-xl shadow-lg px-4 py-4 flex flex-col items-center text-center transition-all hover:shadow-xl ${tool.featured ? 'ring-2 ring-gray-200' : ''
                     }`}
                 >
                   {/* Icon Container */}
-                  <div className={`mb-2 ${tool.featured ? 'bg-gradient-to-br from-[#b67ed1] to-blue-700 p-2 rounded-2xl' : ''}`}>
+                  <div className={`mb-2 ${tool.featured ? 'bg-gradient-to-br from-gray-500 to-gray-700 p-4 rounded-2xl' : ''}`}>
                     {tool.icon}
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-base font-bold text-black mb-1">
+                  <h3 className="text-base font-bold text-gray-900 mb-1">
                     {tool.title}
                   </h3>
 
@@ -229,8 +229,6 @@ const WorkflowToolsCarousel = () => {
                   {/* CTA Button */}
                   <Link
                     to={tool.route}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="w-full py-1.5 px-2 border-2 border-gray-900 rounded-lg text-sm font-semibold text-gray-900 hover:bg-gray-900 hover:text-white transition-colors flex items-center justify-center gap-1"
                   >
                     {tool.buttonText}
@@ -245,10 +243,10 @@ const WorkflowToolsCarousel = () => {
           <button
             onClick={nextSlide}
             disabled={currentSlide === totalSlides - 1}
-            className={`absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center transition-colors ${currentSlide === totalSlides - 1 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-50'
+            className={`absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center transition-colors ${currentSlide === totalSlides - 1 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-50'
               }`}
           >
-            <ChevronRight className="w-5 h-5 text-blue-600" />
+            <ChevronRight className="w-5 h-5 text-gray-600" />
           </button>
         </div>
 
@@ -260,8 +258,8 @@ const WorkflowToolsCarousel = () => {
               key={index}
               onClick={() => setCurrentSlide(index)}
               className={`h-2 rounded-full transition-all ${currentSlide === index
-                ? 'w-8 bg-blue-800'
-                : 'w-2 bg-blue-300 hover:bg-blue-400'
+                ? 'w-8 bg-gray-800'
+                : 'w-2 bg-gray-300 hover:bg-gray-400'
                 }`}
             />
           ))}
