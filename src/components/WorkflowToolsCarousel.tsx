@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 
 const WorkflowToolsCarousel = () => {
@@ -226,15 +227,15 @@ const WorkflowToolsCarousel = () => {
                   </p>
 
                   {/* CTA Button */}
-                  <a
-                    href={tool.route}
+                  <Link
+                    to={tool.route}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full py-1.5 px-2 border-2 border-gray-900 rounded-lg text-sm font-semibold text-gray-900 hover:bg-gray-900 hover:text-white transition-colors flex items-center justify-center gap-1"
                   >
                     {tool.buttonText}
                     <ArrowRight className="w-3 h-3" />
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>
