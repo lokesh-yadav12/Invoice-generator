@@ -208,7 +208,7 @@ const WorkflowToolsCarousel = () => {
               {tools.map((tool, index) => (
                 <div
                   key={index}
-                  className={`flex-shrink-0 w-[calc(33.333%-11px)] bg-white rounded-xl shadow-lg px-4 py-4 flex flex-col items-center text-center transition-all hover:shadow-xl ${tool.featured ? 'ring-2 ring-gray-200' : ''
+                  className={`flex-shrink-0 w-[calc(33.333%-11px)]  rounded-xl shadow-lg px-4 py-4 flex flex-col items-center text-center transition-all hover:shadow-xl ${tool.featured ? 'ring-2 ring-gray-200' : ''
                     }`}
                 >
                   {/* Icon Container */}
